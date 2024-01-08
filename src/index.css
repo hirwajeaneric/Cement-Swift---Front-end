@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.full_with_container {
+  width: 90%;
+  display: flex;
+  max-width: 1440px;
+}
+
+.banner_section {
+  background-image: url("../src/assets/Banner_Image_Cement_Swift.jpg");
+  width: 100%;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  /* background-origin: initial; */
+}
+
+.custom_button_1 {
+  background-color: black;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 15px;
+  width: fit-content;
+}
+
+.custom_button_2 {
+  background-color: white;
+  color: black;
+  padding: 15px 20px;
+  border-radius: 15px;
+  width: fit-content;
+}
+
+.custom_button_1:hover {
+  background-color: gray;
+}
+
+.search_input_element {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: flex-start;
+  
+}
+
+.search_input_element input {
+  width: 20%;
+  height: 1.7rem;
+  border: 2px solid black;
+}
+
+.search_input_element label {
+  width: 80%;
+}
+
+.product_categories, .sort_by {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media (width > 480px) {
+  .full_with_container {
+    width: 90%;
+  }
+}
+
+@media (width > 768px) {
+  .full_with_container {
+    width: 75%;
+  }
+}
